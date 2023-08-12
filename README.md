@@ -21,7 +21,7 @@ hasura migrate create "init" --from-server --endpoint https://yufwbfestdytkggaux
 
 If for some reason the authentication was being failed, add the line `admin_secret: yoursecret` in the `nhost/config.yaml` file
 
-## How to automatically create migrations when creating a table
+## How to automatically create migrations and a Table via API
 
 Create a `POST` request on the route `/apis/migrate` with the following body with `x-hasura-admin-secret` to create a migration automatically while creating a table.
 
